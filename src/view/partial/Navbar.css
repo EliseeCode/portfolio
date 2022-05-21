@@ -1,0 +1,52 @@
+@media screen and (max-width: 1023px) {
+    #navbarContent.is-active {
+        overflow: auto;
+        visibility: visible;
+        opacity: 1;
+        clip-path: circle(100% at 50% 50%);
+        /*clip-path: circle(1000px at 110px 100px)*/
+    }
+
+    nav {
+        background-color: red;
+    }
+
+    #navbarContent {
+        transition: all 1s ease-in-out;
+        visibility: hidden;
+        opacity: 0.7;
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        top: 50px;
+        left: 0;
+        z-index: 8;
+        padding: 74px 25px;
+        background-color: #e8e8e8;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        clip-path: circle(5px at 100% 0)
+    }
+
+    .navbar-menu .navbar-item {
+        margin-top: 2rem;
+        text-transform: uppercase;
+    }
+
+    /* Hide by default */
+    .navbar-dropdown {
+        display: none;
+    }
+
+    .has-dropdown.is-active .navbar-dropdown {
+        display: block;
+    }
+
+}

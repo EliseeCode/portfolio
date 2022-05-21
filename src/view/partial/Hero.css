@@ -1,0 +1,33 @@
+.zebra-bg {
+    background: linear-gradient(90deg, rgba(0, 29, 210, 1) 0%, rgba(12, 9, 121, 1) 35%, rgba(175, 0, 255, 1) 100%);
+    position: relative;
+    height: auto;
+    min-height: auto;
+}
+
+.zebra-bg:before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    background-image: url(../../assets/images/zebra.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+}
+
+.hero-bottom {
+    position: relative;
+    width: 850px;
+    min-width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero-bottom img {
+    display: block;
+    width: 100%;
+}
